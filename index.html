@@ -10,82 +10,86 @@
     />
     <title>Nexora</title>
   </head>
-  <header class="bg-white shadow-lg fixed w-full">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <!-- Logo -->
-        <div class="flex items-center gap-2">
-          <span class="text-2xl font-bold text-blue-600">Nexora</span>
-          <span
-            class="hidden lg:inline text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full"
-            >Marketing Agency</span
-          >
-        </div>
+  <body class="bg-gray-50">
+    <header class="bg-white shadow-lg fixed w-full">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-bold text-blue-600">Nexora</span>
+            <span
+              class="hidden lg:inline text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full"
+              >Marketing Agency</span
+            >
+          </div>
 
-        <!-- Desktop Menu -->
-        <nav
-          class="hidden lg:flex items-center gap-6 text-gray-700 font-medium"
-        >
+          <!-- Desktop Menu -->
+          <nav
+            class="hidden lg:flex items-center gap-6 text-gray-700 font-medium"
+          >
+            <a href="#" class="hover:text-blue-600">Home</a>
+            <a href="#" class="hover:text-blue-600">Services</a>
+            <a href="#" class="hover:text-blue-600">Our Work</a>
+            <a href="#" class="hover:text-blue-600">Our Team</a>
+            <a href="#" class="hover:text-blue-600">Contact</a>
+          </nav>
+
+          <!-- Button -->
+          <div class="hidden lg:block">
+            <button
+              class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+              Get a Consultation
+            </button>
+          </div>
+
+          <!-- Mobile Button -->
+          <button id="menuBtn" class="lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden border-t shadow-lg">
+        <div class="flex flex-col gap-4 p-4 text-gray-700 font-medium">
           <a href="#" class="hover:text-blue-600">Home</a>
           <a href="#" class="hover:text-blue-600">Services</a>
           <a href="#" class="hover:text-blue-600">Our Work</a>
           <a href="#" class="hover:text-blue-600">Our Team</a>
           <a href="#" class="hover:text-blue-600">Contact</a>
-        </nav>
 
-        <!-- Button -->
-        <div class="hidden lg:block">
           <button
-            class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
+            class="bg-blue-600 font-semibold text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition w-full"
           >
             Get a Consultation
           </button>
         </div>
-
-        <!-- Mobile Button -->
-        <button id="menuBtn" class="lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-7 w-7"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
       </div>
-    </div>
+    </header>
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden border-t shadow-lg">
-      <div class="flex flex-col gap-4 p-4 text-gray-700 font-medium">
-        <a href="#" class="hover:text-blue-600">Home</a>
-        <a href="#" class="hover:text-blue-600">Services</a>
-        <a href="#" class="hover:text-blue-600">Our Work</a>
-        <a href="#" class="hover:text-blue-600">Our Team</a>
-        <a href="#" class="hover:text-blue-600">Contact</a>
-
-        <button
-          class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition w-full"
-        >
-          Get a Consultation
-        </button>
-      </div>
-    </div>
-  </header>
-  <body class="bg-gray-50">
     <!-- Hero Section -->
-    <main class="w-[90%] mx-auto h-screen flex items-center pt-16">
-      <div class="grid grid-cols-12 gap-8 items-center max-h-full">
+    <main class="w-[90%] mx-auto h-screen flex items-center pt-8">
+      <div class="grid grid-cols-12 gap-y-8 md:gap-x-8 items-center max-h-full">
         <!-- Text Content -->
-        <div class="col-span-12 lg:col-span-8 xl:col-span-6 space-y-8">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-none">
+        <div class="col-span-12 lg:col-span-8 xl:col-span-6 space-y-8 p-2">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-gray-900"
+            style="line-height: 1.2"
+          >
             We Help Brands <span class="text-blue-600">Grow Online</span>
           </h1>
 
@@ -96,7 +100,7 @@
 
           <!-- Highlights -->
           <div
-            class="grid grid-cols-2 sm:grid-cols-3 gap-y-2 text-sm text-gray-700"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-2 text-sm text-gray-700"
           >
             <div class="flex items-center gap-2">
               <span class="text-blue-500"
@@ -121,15 +125,15 @@
           </div>
 
           <!-- Buttons -->
-          <div class="flex flex-wrap gap-4">
+          <div class="flex flex-wrap gap-2 md:gap-4">
             <button
-              class="bg-blue-600 text-white text:md lg:text-xl font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+              class="bg-blue-600 text-white text:md lg:text-xl font-semibold px-4 md:px-6 py-3 rounded-lg hover:bg-blue-700 transition"
             >
               Start Your Project
             </button>
 
             <button
-              class="flex gap-3 items-center border-2 text-sm lg:text-lg text-gray-500 border-gray-300 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition"
+              class="flex gap-3 items-center border-2 text-sm lg:text-lg text-gray-500 border-gray-300 px-4 md:px-6 py-3 rounded-lg hover:border-blue-500 hover:text-blue-500 transition"
             >
               <i class="fa-solid fa-play"></i> View Our Work
             </button>
@@ -138,7 +142,7 @@
 
         <!-- Hero Visual -->
         <div
-          class="col-span-12 lg:col-span-4 xl:col-span-6 flex-1 relative w-full"
+          class="col-span-12 lg:col-span-4 xl:col-span-6 flex-1 relative w-full px-2"
         >
           <div
             class="w-full h-40 lg:h-96 bg-gradient-to-br from-blue-400 to-purple-400 rounded-3xl shadow-2xl overflow-hidden relative"
@@ -159,7 +163,7 @@
 
           <!-- Floating Card -->
           <div
-            class="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-white p-3 lg:p-4 rounded-3xl shadow-xl"
+            class="absolute -left-2 -bottom-6 lg:-left-6 bg-white p-3 lg:p-4 rounded-3xl shadow-xl"
           >
             <div class="flex items-center gap-3">
               <div
