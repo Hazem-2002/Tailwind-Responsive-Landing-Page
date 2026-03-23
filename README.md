@@ -6,8 +6,8 @@ A modern and fully responsive landing page built using **HTML** and **Tailwind C
 
 ## 🚀 Live Demo
 
-🔗 [Live Demo](https://hazem-2002.github.io/Tailwind-Project/)  
-🔗 [GitHub Repository](https://github.com/Hazem-2002/Tailwind-Project)
+🔗 [Live Demo](https://hazem-2002.github.io/Tailwind-Responsive-Landing-Page/)  
+🔗 [GitHub Repository](https://github.com/Hazem-2002/Tailwind-Responsive-Landing-Page)
 
 ---
 
@@ -83,7 +83,7 @@ Open `index.html` in your browser
 
 * GitHub: [Hazem-2002](https://github.com/Hazem-2002)
 * LinkedIn: [Hazem Mahmoud](https://www.linkedin.com/in/hazem-mahmoud-004094376)
-* Project: [Tailwind App Repo](https://github.com/Hazem-2002/Tailwind-Project)
+* Project: [Tailwind App Repo](https://github.com/Hazem-2002/Tailwind-Responsive-Landing-Page)
 
 ---
 
